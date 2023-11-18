@@ -419,22 +419,19 @@ class Task extends ParseObject implements ParseCloneable {
 
   // Define your task properties here
   String get title => get<String>('Title') ?? '';
-  set title(String value) => set<String>('Title', value); // Add the setter body
+  set title(String value) => set<String>('Title', value); 
 
   String get description => get<String>('Description') ?? '';
   set description(String value) =>
-      set<String>('Description', value); // Add the setter body
+      set<String>('Description', value); 
 
   DateTime get dueDate =>
-      get<DateTime>('Due_Date') ?? DateTime.now(); // Add this line
-  set dueDate(DateTime value) => set<DateTime>('Due_Date', value); // Add this line
+      get<DateTime>('Due_Date') ?? DateTime.now(); 
+  set dueDate(DateTime value) => set<DateTime>('Due_Date', value); 
 
   bool get status =>
-      get<bool>('Status') ?? false; // Add this line
-  set status(bool value) => set<bool>('Status', value); // Add this line
+      get<bool>('Status') ?? false; 
+  set status(bool value) => set<bool>('Status', value); 
 
-  // You can add other properties similarly
-  // For example:
-  // String get description => get<String>('description') ?? '';
-  // set description(String value) => set<String>('description', value);
+
 }
