@@ -17,22 +17,25 @@ We can signup for Back4App which will be our database for our application from t
 **Setup of Back4App**
 Click on Build new app in Back4App. Following is a screenshot for reference,
 
+<img width="1077" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/999dc251-293e-48df-8b63-79dcdcb95928">
 
-<img width="1148" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/aa7ce13e-35c1-49fb-8ff8-98c02586718a">
 
 Once the application is created. Click on create class in the top left corner,
 
-<img width="307" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/b8ccba10-3626-4ff0-9453-677f2a42dd13">
+<img width="302" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/41107064-cf35-4c12-a487-b42cae364f73">
+
 
 Back4App is case-sensitive and so we need to have the Class name (This will be the Table name) and the field names in lowercase or any case which is preferred and can be used in the same manner in the code.
 
 Click on Add column in the top left corner to add new fields in the task table,
 
-<img width="1512" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/3f97f7a2-8bfd-4db4-82d0-8f0b5c84a7c6">
+<img width="1512" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/c9b6b3fb-1737-4989-a92a-37149a8af983">
+
 
 Select the data type as String for Title and Description while we can use the Date field type for Due date field. For the status field, I am using a Boolean field type where if the value is false then the task is Open while if the value is closed then it means that the taks is completed,
 
-<img width="533" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/16b2e250-6c0f-4c8a-9cea-faff61793511">
+<img width="534" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/f6d20f00-cf7a-41f2-be07-e6f0e9d58b63">
+
 
 Now, Back4App is setup for our application. Next we need to write the code in flutter for the application.
 
@@ -67,36 +70,42 @@ We also have a plus icon shown in the bottom right corner to add new tasks.
 
 Following is the first page of the application,
 
-<img width="331" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/ccef10a6-0db9-4c77-af6f-e7fd33626535">
+<img width="324" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/e24fc4ed-4f77-4f55-8f94-d76b98df1518">
+
 
 Clicking on the plus icon will display the Add task form where the user can enter Task Title, Description, Due Date and Time.
 
-<img width="329" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/5ab88f4b-c8ee-488e-ab7f-8f9c22601fa2">
+<img width="326" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/c156a95a-f17a-4c5d-b119-d612c34d2236">
 
 A calendar view and clock view is provided for selecting a date and time,
 
- <img width="326" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/af39b1c5-4ee2-4dac-8129-09a0dc384364">   <img width="324" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/96f362a2-0d2c-4e24-a53d-5570450ce4a4">
+ <img width="309" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/6919e460-50f4-416d-b90a-7ce930dce07a">
+   <img width="322" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/21b85d4c-5c93-4bfe-a0b1-5d8e08dbfd2d">
 
- <img width="334" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/5c2e0549-6d3d-4b7f-818d-f81f5a09464a">
 
- Once we add all the details and click on the Add task button then the new task will be added and shown in the Open tasks and All tasks tabs,
+<img width="320" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/f2f2e3a4-a2ab-402a-ba18-877c2e1770d8">
 
- <img width="338" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/9bca3dc9-87b7-464a-a357-0fe26f22201e">
+ Once we add all the details and click on the Add task button then the new task will be added and shown in the Open tasks and All tasks tabs. The tasks will be ordered based on Due date/time,
 
- Following is a screenshot where we see that the tasks are sorted based on Date/time,
- 
- <img width="328" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/27e15113-e165-49fc-b86d-e91277d2705d">
+<img width="324" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/168b7993-7729-455f-ae65-821a897b33a6">
+
 
  We have provided two buttons for each task. One is to mark the task as completed while the other is to delete a task. Clicking on the Completed button will move the task to Completed status and will be displayed in the Completed tab in Green and with a check-mark showing that the task is complete,
 
- <img width="328" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/2e202d5d-997a-423f-ad5e-e46351a05d5e">  <img width="321" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/f5cbf1e0-ce6d-495e-92c5-496fbc2c516a">
+<img width="320" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/99c741c4-0923-4b11-b3f5-a12d6b35473c">
+
+
+All Tasks page where both Open and Completed tasks are shown and sorted based on Due date/time,
+
+<img width="321" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/cc195ded-0b58-4214-b119-63bb6732330b">
 
 
  Clicking on the Delete icon will remove the task from the database.
 
  Following is how the tasks are shown in the database,
 
- <img width="1512" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/2c392626-1738-46aa-b914-7f090dc20be5">
+<img width="1512" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/f4f339f1-2e3c-45c6-beef-57b39201a0c8">
+
 
 
 
