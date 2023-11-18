@@ -195,7 +195,7 @@ class TaskListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Color backgroundColor = task.status ? Color(0xFF2196F3) : Colors.white;
+    Color backgroundColor = task.status ? Color.fromARGB(255, 151, 219, 79) : Colors.white;
 
     return Container(
       color: backgroundColor,
@@ -220,7 +220,7 @@ class TaskListItem extends StatelessWidget {
                 child: Text('Completed'),
               ),
             if (task.status)
-              Icon(Icons.check, color: Color.fromARGB(255, 251, 243, 8)),
+              Icon(Icons.check_circle_rounded, color: Color.fromARGB(255, 252, 243, 0)),
             IconButton(
               onPressed: onDelete,
               icon: Icon(Icons.delete),
