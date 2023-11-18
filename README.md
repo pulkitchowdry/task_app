@@ -17,8 +17,8 @@ We can signup for Back4App which will be our database for our application from t
 **Setup of Back4App**
 Click on Build new app in Back4App. Following is a screenshot for reference,
 
-<img width="1077" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/999dc251-293e-48df-8b63-79dcdcb95928">
 
+<img width="1076" alt="image" src="https://github.com/pulkitchowdry/task_app/assets/137600635/ffb9431a-128a-4d51-84fe-f96b9f053deb">
 
 Once the application is created. Click on create class in the top left corner,
 
